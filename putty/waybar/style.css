@@ -1,0 +1,83 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.5);
+    color: #cdd6f4;
+    border-radius: 8px;
+}
+
+#workspaces {
+    background: rgba(49, 50, 68, 0.4);
+    margin: 5px 5px;
+    padding: 0 5px;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #a6adc8;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #cba6f7;
+    background: rgba(203, 166, 247, 0.2);
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    color: #f5c2e7;
+    background: rgba(245, 194, 231, 0.2);
+    border-radius: 6px;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray {
+    background: rgba(49, 50, 68, 0.4);
+    padding: 0 10px;
+    margin: 5px 2px;
+    border-radius: 8px;
+}
+
+#clock {
+    color: #89b4fa;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#network {
+    color: #94e2d5;
+}
+
+#pulseaudio {
+    color: #fab387;
+}
+
+/* Removes the ugly bar between icons in the tray */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
