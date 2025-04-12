@@ -1,0 +1,18 @@
+background-opacity = 0.75
+
+font-family = JetBrains Mono
+font-size = 12
+
+window-padding-x = 12
+window-padding-y = 12
+
+cursor-style = block
+
+background = #2e3440
+foreground = #d8dee9
+
+window-decoration = false
+window-theme = dark
+
+clipboard-trim-trailing-spaces = true
+mouse-hide-while-typing = true
